@@ -1,5 +1,5 @@
 # Launcher
-A Django project to provide quick setup of the basics. Includes many sanitary features such as a custom user model and complete user authentication flow
+A Django project skeleton to provide quick setup of the basics for creating an app so you (and me) can get on and build the fun stuff quicker. It includes many sanitary features such as a custom user model and complete user authentication flow.
 
 ## Features
 * Postgres DB with psycopg2 for production
