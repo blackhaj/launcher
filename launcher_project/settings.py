@@ -37,7 +37,6 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    'whitenoise.runserver_nostatic', #for whitenoise static files
     'django.contrib.staticfiles',
     'django.contrib.sites', # for django-allauth
 
@@ -55,7 +54,6 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware', # for whitenoise
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -144,10 +142,8 @@ DEFAULT_FROM_EMAIL = os.environ.get('EMAIL_FROM', '')
 
 
 # Static files (CSS, JavaScript, Images)
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles') #white noise setting
 STATIC_URL = '/static-files/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, "static-files")]
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'#whitenoise setting
 
 # Authentication / Allauth
 AUTHENTICATION_BACKENDS = (

@@ -9,7 +9,6 @@ verify_ssl = true
 django = "*"
 django-allauth = "*"
 psycopg2 = "~=2.7"
-whitenoise = "*"
 django-admin-honeypot = "*"
 dj-database-url = "*"
 
