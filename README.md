@@ -13,7 +13,7 @@ A Django project skeleton to provide quick setup of the basics for creating an a
 * Seperated environment variables
 * A alternative admin url and Django-admin-honeypot integration
 
-## How to use
+## How to use
 1. Make sure you have python and pipenv installed
 2. Clone the repo, install the dependencies and enter the shell
 ``` bash
